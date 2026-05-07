@@ -1,0 +1,27 @@
+html-css-portfolio/
+├── index.html
+├── css/
+│   ├── style.css
+│   ├── animations.css
+│   ├── responsive.css
+│   └── variables.css
+├── js/
+│   ├── main.js
+│   ├── scrollAnimation.js
+│   └── navbar.js
+├── assets/
+│   ├── images/
+│   │   ├── profile.jpg
+│   │   ├── project-1.jpg
+│   │   ├── project-2.jpg
+│   │   ├── project-3.jpg
+│   │   ├── project-4.jpg
+│   │   ├── project-5.jpg
+│   │   └── project-6.jpg
+│   ├── icons/
+│   │   └── favicon.ico
+│   └── videos/
+│       └── background.mp4
+├── README.md
+├── package.json
+└── .gitignore
