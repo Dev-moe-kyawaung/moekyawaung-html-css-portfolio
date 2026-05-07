@@ -1,0 +1,829 @@
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Extra Large Devices (2xl+) */
+@media (min-width: 1536px) {
+    :root {
+        --font-size-base: 1.125rem;
+        --font-size-xl: 1.75rem;
+        --font-size-2xl: 2.5rem;
+        --font-size-3xl: 3rem;
+        --font-size-4xl: 3.5rem;
+        --font-size-5xl: 4rem;
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
+
+    .section-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Large Devices (xl) */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        gap: 4rem;
+    }
+
+    .about-content {
+        gap: 4rem;
+    }
+}
+
+/* Medium Devices (lg) */
+@media (max-width: 1023px) {
+    :root {
+        --spacing-2xl: 2.5rem;
+        --spacing-3xl: 3rem;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .skills-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .timeline {
+        margin-top: 50px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar .container {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+}
+
+/* Small Tablets (md) */
+@media (max-width: 767px) {
+    :root {
+        --spacing-xl: 1.5rem;
+        --spacing-2xl: 2rem;
+        --spacing-3xl: 2.5rem;
+        --font-size-xl: 1.25rem;
+        --font-size-2xl: 1.75rem;
+        --font-size-3xl: 2rem;
+        --font-size-4xl: 2.5rem;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-right {
+        order: -1;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .title-underline {
+        width: 80px;
+    }
+
+    /* Navigation */
+    .nav-toggle {
+        display: block !important;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: var(--bg-secondary);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 30px 20px;
+    }
+
+    /* Portfolio Grid */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-filter {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* About */
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-items {
+        margin-left: 20px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* Phones (sm) */
+@media (max-width: 639px) {
+    :root {
+        --spacing-md: 0.75rem;
+        --spacing-lg: 1rem;
+        --spacing-xl: 1.25rem;
+        --spacing-2xl: 1.5rem;
+        --spacing-3xl: 2rem;
+    }
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    /* Navigation */
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .nav-container {
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .logo-icon {
+        display: none;
+    }
+
+    .theme-toggle {
+        display: none;
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .profile-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .social-label {
+        font-size: 0.85rem;
+    }
+
+    /* Section Headers */
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .title-underline {
+        width: 60px;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skill-card {
+        padding: 20px 15px;
+    }
+
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .skill-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .skill-list {
+        gap: 8px;
+    }
+
+    .skill-tag {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Portfolio Section */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .portfolio-filter {
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .portfolio-card {
+        overflow: hidden;
+    }
+
+    .portfolio-image {
+        height: 200px;
+    }
+
+    .portfolio-content {
+        padding: 15px;
+    }
+
+    .portfolio-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-tags {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .tag {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-header {
+        gap: 10px;
+    }
+
+    .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .testimonial-info h4 {
+        font-size: 1rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+
+    /* Contact Section */
+    .contact-methods {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-method {
+        padding: 20px;
+    }
+
+    .contact-method i {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        margin-top: 2rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group label {
+        font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .contact-social {
+        margin-top: 2rem;
+    }
+
+    .social-links.large {
+        gap: 15px;
+    }
+
+    .social-link.large {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 0.85rem;
+    }
+
+    /* CTA Section */
+    .cta-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+
+    /* Timeline */
+    .timeline-items {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .timeline-item {
+        padding-bottom: 1.5rem;
+    }
+
+    .timeline-marker {
+        width: 12px;
+        height: 12px;
+        left: -26px;
+    }
+
+    .timeline-content h4 {
+        font-size: 1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+
+    /* About Image */
+    .about-img {
+        max-height: 300px;
+    }
+
+    .image-overlay {
+        display: none;
+    }
+}
+
+/* Extra Small Phones (xs) */
+@media (max-width: 479px) {
+    :root {
+        --spacing-md: 0.5rem;
+        --spacing-lg: 0.75rem;
+        --spacing-xl: 1rem;
+        --spacing-2xl: 1.25rem;
+    }
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    /* Logo */
+    .logo {
+        font-size: 1rem;
+    }
+
+    .logo-text {
+        display: block;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+        gap: 5px;
+    }
+
+    .btn-icon {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .profile-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-stats {
+        gap: 0.25rem;
+    }
+
+    .stat-number {
+        font-size: 1.1rem;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+    }
+
+    .scroll-indicator {
+        bottom: 10px;
+    }
+
+    /* Section Title */
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .title-underline {
+        width: 50px;
+        height: 3px;
+    }
+
+    /* Forms */
+    .form-group {
+        margin-bottom: 0.75rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Footer */
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+
+    /* Back to Top */
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    /* Hide unnecessary elements on very small screens */
+    .hero-social {
+        display: none;
+    }
+
+    .profile-particles {
+        display: none;
+    }
+
+    .profile-ring {
+        border-width: 1px;
+    }
+
+    /* Portfolio Meta */
+    .portfolio-meta {
+        flex-wrap: wrap;
+        font-size: 0.75rem;
+    }
+
+    /* Timeline responsive */
+    .timeline-marker {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 600px) {
+    .hero {
+        min-height: auto;
+        padding: 30px 0;
+    }
+
+    .profile-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* Touch Devices */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        padding: 12px 24px;
+    }
+
+    .social-link {
+        padding: 12px;
+    }
+
+    .portfolio-card {
+        cursor: pointer;
+    }
+
+    .portfolio-overlay {
+        position: static;
+        opacity: 0.8;
+        backdrop-filter: blur(0);
+    }
+
+    a:active {
+        opacity: 0.8;
+    }
+}
+
+/* High Resolution Displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+    body {
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+/* Prints */
+@media print {
+    nav,
+    .scroll-indicator,
+    .back-to-top,
+    .contact-form,
+    .theme-toggle {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
