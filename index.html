@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moe Kyaw Aung - Full Stack Developer Portfolio">
+    <meta name="keywords" content="developer, portfolio, react, nodejs, flutter">
+    <meta name="author" content="Moe Kyaw Aung">
+    <meta name="theme-color" content="#667eea">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <title>Moe Kyaw Aung - Full Stack Developer</title>
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main" class="skip-to-main">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-wrapper">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#home" class="logo-link">
+                        <span class="logo-icon"><i class="fas fa-code"></i></span>
+                        <span class="logo-text">moe<span class="gradient-text">kyawaung</span></span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Nav Links -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- ============ HERO SECTION ============ -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-left">
+                        <div class="profile-container">
+                            <div class="profile-wrapper">
+                                <div class="profile-image-box">
+                                    <img src="https://via.placeholder.com/400x500?text=Moe+Kyaw+Aung" 
+                                         alt="Moe Kyaw Aung - Full Stack Developer" 
+                                         class="profile-image"
+                                         loading="lazy">
+                                </div>
+                                <div class="profile-ring"></div>
+                                <div class="profile-particles">
+                                    <span class="particle"></span>
+                                    <span class="particle"></span>
+                                    <span class="particle"></span>
+                                    <span class="particle"></span>
+                                    <span class="particle"></span>
+                                </div>
+                                <div class="floating-shapes">
+                                    <div class="shape shape-1"></div>
+                                    <div class="shape shape-2"></div>
+                                    <div class="shape shape-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-right">
+                        <div class="hero-text">
+                            <div class="greeting">
+                                <span class="wave">👋</span>
+                                <h3>Hello, I'm</h3>
+                            </div>
+
+                            <h1 class="hero-title">
+                                <span class="title-word">Moe</span>
+                                <span class="title-word">Kyaw</span>
+                                <span class="title-word">Aung</span>
+                            </h1>
+
+                            <p class="hero-subtitle">
+                                Full Stack Developer • Cloud Architect • Tech Innovator
+                            </p>
+
+                            <p class="hero-description">
+                                I craft elegant digital solutions that transform ideas into reality. 
+                                With expertise across frontend, backend, and cloud technologies, I build 
+                                scalable applications that make an impact.
+                            </p>
+
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">5+</span>
+                                    <span class="stat-label">Years Exp.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">30+</span>
+                                    <span class="stat-label">Clients</span>
+                                </div>
+                            </div>
+
+                            <div class="hero-buttons">
+                                <a href="#contact" class="btn btn-primary">
+                                    <span class="btn-text">Get in Touch</span>
+                                    <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                                </a>
+                                <a href="#portfolio" class="btn btn-secondary">
+                                    <span class="btn-text">View My Work</span>
+                                    <span class="btn-icon"><i class="fas fa-briefcase"></i></span>
+                                </a>
+                            </div>
+
+                            <div class="hero-social">
+                                <p class="social-label">Follow me on</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/moekyawaung-cloud" 
+                                       class="social-link" 
+                                       title="GitHub"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="social-link" title="Twitter" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="mailto:moekyawaung@example.com" class="social-link" title="Email">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Elements -->
+            <div class="hero-bg">
+                <div class="bg-gradient"></div>
+                <div class="bg-shapes">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT SECTION ============ -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="gradient-text">About</span> Me
+                    </h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="about-image-wrapper">
+                            <img src="https://via.placeholder.com/400x500?text=About+Me" 
+                                 alt="About Moe Kyaw Aung" 
+                                 class="about-img"
+                                 loading="lazy">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <h3>Who Am I?</h3>
+                        <p>
+                            Welcome to my digital space! I'm <strong>Moe Kyaw Aung</strong>, a passionate 
+                            full-stack developer with a deep commitment to creating innovative and impactful 
+                            digital solutions.
+                        </p>
+
+                        <p>
+                            With over 5 years of professional experience, I've worked with startups and 
+                            enterprises alike, building everything from responsive web applications to 
+                            cloud-based systems. My expertise spans modern frontend frameworks, robust 
+                            backend architectures, and scalable cloud infrastructure.
+                        </p>
+
+                        <p>
+                            I believe in writing clean, maintainable code and following industry best practices. 
+                            My approach to development is always user-centric, ensuring that every project 
+                            delivers value and exceeds expectations.
+                        </p>
+
+                        <h3 class="mt-3">My Journey</h3>
+                        <p>
+                            My passion for technology started early, and I've spent years honing my craft 
+                            across multiple technologies and frameworks. I'm constantly learning, exploring 
+                            new technologies, and staying updated with industry trends.
+                        </p>
+
+                        <div class="about-cta">
+                            <a href="#portfolio" class="btn btn-primary">
+                                <span>View My Projects</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="timeline">
+                    <h3 class="timeline-title">My Journey</h3>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2019 - First Project</h4>
+                                <p>Started my freelance journey with my first client project</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2020 - Full Stack Master</h4>
+                                <p>Mastered full-stack development with React and Node.js</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2021 - Cloud Expertise</h4>
+                                <p>Gained expertise in AWS and cloud architecture</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2023 - Tech Leader</h4>
+                                <p>Leading teams and mentoring junior developers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS SECTION ============ -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="gradient-text">Technical</span> Skills
+                    </h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="gradient-text">Frontend</h3>
+                        <p class="skill-description">Modern UI/UX with cutting-edge frameworks</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-tag">React</span></li>
+                            <li><span class="skill-tag">Next.js</span></li>
+                            <li><span class="skill-tag">Angular</span></li>
+                            <li><span class="skill-tag">Vue.js</span></li>
+                            <li><span class="skill-tag">TypeScript</span></li>
+                            <li><span class="skill-tag">Tailwind CSS</span></li>
+                            <li><span class="skill-tag">Bootstrap</span></li>
+                            <li><span class="skill-tag">GSAP</span></li>
+                        </ul>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="gradient-text">Backend</h3>
+                        <p class="skill-description">Robust APIs and scalable systems</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-tag">Node.js</span></li>
+                            <li><span class="skill-tag">Ruby</span></li>
+                            <li><span class="skill-tag">Python</span></li>
+                            <li><span class="skill-tag">Kotlin</span></li>
+                            <li><span class="skill-tag">Express.js</span></li>
+                            <li><span class="skill-tag">Rails</span></li>
+                            <li><span class="skill-tag">REST APIs</span></li>
+                            <li><span class="skill-tag">GraphQL</span></li>
+                        </ul>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 92%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="gradient-text">Databases</h3>
+                        <p class="skill-description">Data management and optimization</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-tag">PostgreSQL</span></li>
+                            <li><span class="skill-tag">MongoDB</span></li>
+                            <li><span class="skill-tag">MySQL</span></li>
+                            <li><span class="skill-tag">Firebase</span></li>
+                            <li><span class="skill-tag">Redis</span></li>
+                            <li><span class="skill-tag">Elasticsearch</span></li>
+                            <li><span class="skill-tag">SQL</span></li>
+                            <li><span class="skill-tag">NoSQL</span></li>
+                        </ul>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="gradient-text">Cloud & DevOps</h3>
+                        <p class="skill-description">Infrastructure and deployment</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-tag">AWS</span></li>
+                            <li><span class="skill-tag">Docker</span></li>
+                            <li><span class="skill-tag">Kubernetes</span></li>
+                            <li><span class="skill-tag">GitHub Actions</span></li>
+                            <li><span class="skill-tag">CI/CD</span></li>
+                            <li><span class="skill-tag">Linux</span></li>
+                            <li><span class="skill-tag">Nginx</span></li>
+                            <li><span class="skill-tag">Jenkins</span></li>
+                        </ul>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Development -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="gradient-text">Mobile</h3>
+                        <p class="skill-description">Cross-platform applications</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-tag">Flutter</span></li>
+                            <li><span class="skill-tag">React Native</span></li>
+                            <li><span class="skill-tag">Dart</span></li>
+                            <li><span class="skill-tag">Swift</span></li>
+                            <li><span class="skill-tag">Kotlin</span></li>
+                            <li><span class="skill-tag">PWA</span></li>
+                            <li><span class="skill-tag">Firebase</span></li>
+                            <li><span class="skill-tag">Xamarin</span></li>
+                        </ul>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Others -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="gradient-text">Tools & Others</h3>
+                        <p class="skill-description">Development tools and utilities</p>
+                        <ul class="skill-list">
+                            <li><span class="skill-tag">Git</span></li>
+                            <li><span class="skill-tag">GitHub</span></li>
+                            <li><span class="skill-tag">VS Code</span></li>
+                            <li><span class="skill-tag">Webpack</span></li>
+                            <li><span class="skill-tag">Figma</span></li>
+                            <li><span class="skill-tag">Jira</span></li>
+                            <li><span class="skill-tag">Postman</span></li>
+                            <li><span class="skill-tag">Agile</span></li>
+                        </ul>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 93%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PORTFOLIO SECTION ============ -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="gradient-text">Featured</span> Projects
+                    </h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Portfolio Filter -->
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item" data-category="frontend">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://via.placeholder.com/400x300?text=React+Dashboard" 
+                                     alt="React Analytics Dashboard" 
+                                     loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h4>React Dashboard</h4>
+                                        <p>Analytics & Data Visualization</p>
+                                        <a href="#" class="overlay-link">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3 class="gradient-text">React Analytics Dashboard</h3>
+                                <p>Modern dashboard with real-time data visualization, responsive design, and interactive charts built with React and Recharts.</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">TypeScript</span>
+                                    <span class="tag">Recharts</span>
+                                    <span class="tag">Tailwind CSS</span>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <span class="meta-item"><i class="fas fa-code"></i> Live Demo</span>
+                                    <span class="meta-item"><i class="fas fa-github"></i> Source Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="portfolio-item" data-category="backend">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://via.placeholder.com/400x300?text=Ruby+API" 
+                                     alt="Ruby REST API Server" 
+                                     loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Ruby API</h4>
+                                        <p>REST API Server</p>
+                                        <a href="#" class="overlay-link">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3 class="gradient-text">Ruby REST API Server</h3>
+                                <p>Scalable backend service with JWT authentication, PostgreSQL database, rate limiting, and comprehensive API documentation.</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Ruby</span>
+                                    <span class="tag">Sinatra</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">JWT</span>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <span class="meta-item"><i class="fas fa-code"></i> API Docs</span>
+                                    <span class="meta-item"><i class="fas fa-github"></i> Source Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://via.placeholder.com/400x300?text=Flutter+Web" 
+                                     alt="Flutter Web Application" 
+                                     loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Flutter Web</h4>
+                                        <p>Cross-platform App</p>
+                                        <a href="#" class="overlay-link">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3 class="gradient-text">Flutter Web Application</h3>
+                                <p>Cross-platform web application with seamless experience across all devices, Firebase integration, and offline capabilities.</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Flutter</span>
+                                    <span class="tag">Dart</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Web</span>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <span class="meta-item"><i class="fas fa-code"></i> Live Demo</span>
+                                    <span class="meta-item"><i class="fas fa-github"></i> Source Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="portfolio-item" data-category="frontend">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://via.placeholder.com/400x300?text=Next.js+Store" 
+                                     alt="Next.js E-Commerce Store" 
+                                     loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Next.js Store</h4>
+                                        <p>E-Commerce Platform</p>
+                                        <a href="#" class="overlay-link">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3 class="gradient-text">Next.js E-Commerce Store</h3>
+                                <p>Full-stack e-commerce platform with Stripe payment integration, admin panel, inventory management, and order tracking.</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Next.js</span>
+                                    <span class="tag">Stripe</span>
+                                    <span class="tag">MongoDB</span>
+                                    <span class="tag">Tailwind</span>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <span class="meta-item"><i class="fas fa-code"></i> Live Demo</span>
+                                    <span class="meta-item"><i class="fas fa-github"></i> Source Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="portfolio-item" data-category="frontend">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://via.placeholder.com/400x300?text=Angular+Admin" 
+                                     alt="Angular Admin Dashboard" 
+                                     loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Angular Admin</h4>
+                                        <p>Admin Panel</p>
+                                        <a href="#" class="overlay-link">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3 class="gradient-text">Angular Admin Dashboard</h3>
+                                <p>Enterprise admin panel with complex state management, data tables, charts, and role-based access control.</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Angular</span>
+                                    <span class="tag">RxJS</span>
+                                    <span class="tag">Material</span>
+                                    <span class="tag">NgRx</span>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <span class="meta-item"><i class="fas fa-code"></i> Live Demo</span>
+                                    <span class="meta-item"><i class="fas fa-github"></i> Source Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="portfolio-item" data-category="backend">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://via.placeholder.com/400x300?text=Kotlin+Ktor" 
+                                     alt="Kotlin Ktor Microservice" 
+                                     loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Kotlin Ktor</h4>
+                                        <p>Microservice</p>
+                                        <a href="#" class="overlay-link">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3 class="gradient-text">Kotlin Ktor Microservice</h3>
+                                <p>High-performance backend service using Kotlin and Ktor framework with Docker containerization and Kubernetes deployment.</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Kotlin</span>
+                                    <span class="tag">Ktor</span>
+                                    <span class="tag">Docker</span>
+                                    <span class="tag">REST</span>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <span class="meta-item"><i class="fas fa-code"></i> API Docs</span>
+                                    <span class="meta-item"><i class="fas fa-github"></i> Source Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View More Button -->
+                <div class="portfolio-cta">
+                    <a href="https://github.com/moekyawaung-cloud" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <span>View More Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS SECTION ============ -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        What <span class="gradient-text">People Say</span>
+                    </h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://via.placeholder.com/60?text=Client+1" 
+                                 alt="Client testimonial" 
+                                 class="testimonial-avatar"
+                                 loading="lazy">
+                            <div class="testimonial-info">
+                                <h4>John Doe</h4>
+                                <p>CEO, Tech Startup</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Moe is an exceptional developer who delivered our project ahead of schedule. 
+                            His attention to detail and problem-solving skills are outstanding."
+                        </p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://via.placeholder.com/60?text=Client+2" 
+                                 alt="Client testimonial" 
+                                 class="testimonial-avatar"
+                                 loading="lazy">
+                            <div class="testimonial-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Product Manager, E-Commerce</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Working with Moe was a game-changer for our team. His expertise in modern web 
+                            technologies and clean code practices elevated our entire project."
+                        </p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://via.placeholder.com/60?text=Client+3" 
+                                 alt="Client testimonial" 
+                                 class="testimonial-avatar"
+                                 loading="lazy">
+                            <div class="testimonial-info">
+                                <h4>Mike Chen</h4>
+                                <p>CTO, FinTech Company</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Moe's ability to handle complex backend systems and cloud architecture is 
+                            impressive. Highly recommended for any serious project."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT SECTION ============ -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Let's <span class="gradient-text">Connect</span>
+                    </h2>
+                    <p class="section-subtitle">Have a project in mind or want to collaborate? Let's talk!</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <a href="mailto:moekyawaung@example.com">moekyawaung@example.com</a>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <a href="tel:+95912345678">+95 (9) 123-456-78</a>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Location</h3>
+                            <p>Yangon, Myanmar</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Available For</h3>
+                            <p>Full-time, Part-time, Freelance</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project subject">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <p class="form-note">I'll get back to you within 24 hours</p>
+                    </form>
+                </div>
+
+                <!-- Social Links -->
+                <div class="contact-social">
+                    <p>Connect with me on social media</p>
+                    <div class="social-links large">
+                        <a href="https://github.com/moekyawaung-cloud" class="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:moekyawaung@example.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Start Your Next Project?</h2>
+                <p>Let's create something amazing together</p>
+                <a href="#contact" class="btn btn-light">
+                    <span>Get in Touch Today</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Moe Kyaw Aung</h3>
+                    <p>Full Stack Developer • Cloud Architect • Tech Innovator</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/moekyawaung-cloud" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:moekyawaung@example.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#contact">Web Development</a></li>
+                        <li><a href="#contact">App Development</a></li>
+                        <li><a href="#contact">Cloud Solutions</a></li>
+                        <li><a href="#contact">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Blog</a></li>
+                        <li><a href="#" target="_blank">Documentation</a></li>
+                        <li><a href="#" target="_blank">Open Source</a></li>
+                        <li><a href="#" target="_blank">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 <strong class="gradient-text">Moe Kyaw Aung</strong>. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy Policy</a> • 
+                    <a href="#">Terms of Service</a> • 
+                    <a href="#">Sitemap</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/scrollAnimation.js"></script>
+</body>
+</html>
